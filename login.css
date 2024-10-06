@@ -1,0 +1,73 @@
+﻿@import "index.css";
+html{
+	height:100%;
+	overflow: auto;
+}
+
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	height:100%;
+	background-image: url("./Images/Help-University.jpg");
+	background-size: cover;
+
+}
+a.button:link { color: #1C2541; }
+a.button:visited { color: #1C2541; }
+a.button:hover { 	background-color: #851317!important;
+			color: #FEFEFE; }
+
+a.button{
+	color: #ffffff!important; 
+	background-color:  #da2128!important;
+	text-align: center;
+	text-decoration: none;
+	padding: 9px 20px;
+	margin-left: 5px;
+	border-radius: 5px;
+	/*prevent text hover*/
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.logo img{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.btn-container{
+	display:flex;
+	justify-content: space-between;
+}
+h1{
+	 text-shadow: 2px 2px 1px black;
+}
+label{
+	text-shadow: 1px 1px 1px black;
+}
+.btn-primary{
+	background-color: blueviolet;
+	border-color: blueviolet;
+}
+.hover:hover{
+	background-color: white;
+	border-color: white;
+	color: black;
+	transition: 0.5s;
+}		   
+footer {font-size:70%;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	color: #F7F7F7;
+	text-align: right;
+	height: 10%;
+	padding: 10px 30px;
+	background-color: #000000;	
+	max-height: 100px;}
+

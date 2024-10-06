@@ -1,0 +1,44 @@
+@import "../index.css";
+
+body{
+    background-color: rgb(225, 222, 222);
+    font-family: Helvetica, Arial, sans-serif;
+}
+.overflow-x{
+    overflow-x: hidden;
+}
+.join-button button[type="submit"]{
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 30px;
+}
+.button-holder button{
+    font-weight: 700;
+    width: 150px;
+    padding: 10px 30px;
+}
+main{
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(34, 32, 32);
+}
+h1{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 3.5rem;
+}
+p{
+    text-align: left;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+}
+.event-poster img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+h2{
+    margin: 30px;
+    font-size: 2rem;
+}

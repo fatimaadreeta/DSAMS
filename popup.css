@@ -1,0 +1,70 @@
+@import "index.css";
+#popup{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+	z-index: 9999;
+}
+
+.preview{
+	height:60%;
+}
+
+#popup form{
+	background-color: #c7c7c7;
+}
+
+#popup form input{
+	margin-top: 10px;
+}
+/*TABLES*/
+#thetable td{
+	word-wrap: break-word;
+	max-width: 200px;
+}
+/*
+table{
+	background-color: #3A506B;
+	overflow: auto;
+	width: 100%;
+	
+}
+
+table th{
+	padding: 10px;
+	margin: 10px;
+	background-color: #29255F;
+	text-align:center;
+	color: #ffffff;
+	position: sticky;
+}
+
+table th, td {
+	text-align:center;
+}
+
+table tr{
+	background-color: #3A506B;
+}
+
+table tr:hover, table tr:nth-child(even):hover{
+	background-color: #29255F;
+}
+
+#selected{
+	background-color: #FEFEFE !important;
+	color: #29255F !important;
+}
+
+table tr:nth-child(even){
+	background-color: #3CB64C;
+}
+
+table.list{
+    width: 100%;
+}
+

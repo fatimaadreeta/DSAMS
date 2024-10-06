@@ -1,0 +1,182 @@
+body{
+	background-color: #f4f0f0;
+}
+nav {	
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+	height:70px;
+	z-index: 999;
+} 
+
+.logo img{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	object-fit: cover;
+}
+.navbar-nav{
+	align-items: center;
+}
+/*Forms*/
+form{
+	font-size: 1em;
+}
+
+form input,form textarea{	
+    margin-bottom: 10px;
+}
+
+input[type=text]{
+	color: #29255F;
+	margin-bottom: 10px;
+}
+
+input[type=reset], input[type=submit]{
+	color: #ffffff;
+	background-color:  #29255F;
+    border: #29255F 2px solid;
+}
+
+input[type=reset]:hover, input[type=submit]:hover{
+	background-color:  #ffffff;
+    border: #29255F 2px solid;
+}
+
+input[type=cancel]{
+	color: black;
+	background-color:  #6FFFE9;
+}
+
+.btn-primary{
+	background-color: blueviolet;
+	border-color: blueviolet;
+}
+.hover:hover{
+	background-color: white;
+	border-color: white;
+	color: black;
+	transition: 0.5s;
+}
+
+a.button:hover { 	
+	transition: all .1	s linear;
+	color: #c9141a;
+	border-bottom: 2px solid #c9141a;}
+
+a.button{
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 20px;
+	margin-left: 5px;
+	/*prevent text hover*/
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.invert { 	
+	background-color: #c9141a!important;
+	color: #FEFEFE;
+	border-radius: 5px; }
+
+a.invert:hover {
+	color: #ffffff!important;
+	transition: all .2s linear; 
+	background-color: #c9141a9c !important;
+}
+
+.welcomeCard{
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	padding: 50px;
+}
+/*Dropdown*/
+.dropdown { 
+	display: flex;
+	align-items: center;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	margin-left: 5px;
+	top:50px;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 20px;
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {visibility: visible;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*side nav code*/
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 50px; /* 50 width - change this with JavaScript */
+	position: fixed; 
+	z-index: 1; /* Stay on top */
+	top:70px;
+	left: 0;
+	background-color: #FFFFFF; /* Black*/
+	overflow: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 13px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #818181;
+	display: flex;
+	flex:nowrap;
+	transition: 0.3s;
+	overflow: hidden;
+	white-space: nowrap; 
+	text-overflow: clip; 
+	align-items: center;
+	cursor: pointer;
+}
+.sidenav a i{
+	margin-right: 13px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	background-color: #818181;
+	color: #f1f1f1;
+}
+
+.btn-container{
+	display:flex;
+	justify-content: space-between;
+}
+		   
+footer {font-size:70%;
+    color: #F7F7F7;
+    text-align: right;
+    height: 10%;
+    padding: 10px 30px;
+    background-color: #000000;	
+    max-height: 100px;}
+

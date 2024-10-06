@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html{
+	height:100%;
+	overflow: auto;
+}
+
+::selection {
+	background: #c9141a;
+}
+
+body { 
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	height:100%;
+	background-color: #F2F2F2;
+}
+
+#mainMargin{
+	margin-top: 70px;
+}
+
+main { 
+	overflow: hidden; 
+	min-height: 100%;
+}
+
+#news{
+	position: relative;
+	padding-bottom: 20px;
+	box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.3), 0 0px 5px 8px rgba(0, 0, 0, 0.1);
+	z-index: 10;
+}
+
+.title{
+	text-align: center;
+	font-size: 3em;
+	padding: 15px;
+	font-weight: 900;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{	
+	padding-left: 2em;
+	background-color: #000000;	
+	color:#FFFFFF;
+	line-height:40px;
+	height: 40px;}
+
+nav {	
+	background-color: #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+	height:70px;
+	z-index: 999;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 4px 2px 0 rgba(0, 0, 0, 0.1);
+} 
+
+.logo img{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	object-fit: cover;
+}
+		   
+footer {
+	background-color: #1a1a1a;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	text-align: right;
+	height: 10%;
+	padding: 10px 30px;
+	max-height: 100px;
+}
+
+label{font-size: 1.3em;}
+
+.bg-grey{
+	background-color: #c7c7c7;
+}
+.landingImg{
+	/*https://www.constructionplusasia.com/my/help-university-green-technology-subang-2-campus/*/
+	background-image: url('Images/Help-University.jpg');
+	min-height: 800px; 
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+}
+
+.clubPreview{
+	background-image: linear-gradient(#9c9c9c, #9c9c9c, #9c9c9c00);
+}
+/*navbar code*/
+.navbar-nav{
+	align-items: center;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+a.button:hover { 	
+	transition: all .1	s linear;
+	color: #c9141a;
+	border-bottom: 2px solid #c9141a;
+}
+
+a.button{
+	text-align: center;
+	padding: 12px 20px;
+	margin-left: 5px;
+	/*prevent text hover*/
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.invert { 	
+	background-color: #c9141a!important;
+	color: #FEFEFE;
+	border-radius: 5px; }
+
+a.invert:hover {
+	color: #ffffff!important;
+	transition: all .2s linear; 
+	background-color: #c9141a9c !important;
+}
+
+.welcomeCard{
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	padding: 50px;
+}
+/*Dropdown*/
+.dropdown { 
+	display: flex;
+	align-items: center;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	margin-left: 5px;
+	top:50px;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 20px;
+	text-decoration: none;
+	display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {visibility: visible;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/*side nav code*/
+/* The side navigation menu */
+.sidenav {
+	height: 100%; /* 100% Full-height */
+	width: 50px; /* 50 width - change this with JavaScript */
+	position: fixed; 
+	z-index: 1; /* Stay on top */
+	top:70px;
+	left: 0;
+	background-color: #FFFFFF; /* Black*/
+	overflow: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav a {
+	padding: 8px 8px 8px 13px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #818181;
+	display: flex;
+	flex:nowrap;
+	transition: 0.3s;
+	overflow: hidden;
+	white-space: nowrap; 
+	text-overflow: clip; 
+	align-items: center;
+	cursor: pointer;
+}
+.sidenav a i{
+	margin-right: 13px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	background-color: #818181;
+	color: #f1f1f1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/*small nav bar*/
+.smallnav{
+	height: 35px;
+	background-color: rgb(202, 202, 202);
+	padding-left:20px;
+}
+
+.smallnav a{
+	color: #000;
+}
+
+/*articles*/
+.article{
+	width:100%;
+	margin:auto;	
+	cursor: pointer;
+}
+
+.article a{
+	text-decoration: none;
+}
+
+.article:hover img{ 
+	transform: scale3d(1, 1,1);
+	transition-duration:1s;
+	transition-delay: 0.1s;
+}
+
+.img-wrapper{
+	background-color: #D9D9D9;
+	border-radius:15px 15px 0 0;
+	margin: auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	overflow: hidden;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+.wrap-top{
+	align-items: start; 
+}
+
+.img-wrapper img{
+	width: 200px;
+	/* max-height: 500px; */
+	height:250px;
+	object-fit: cover;
+	transform: scale3d(1.05, 1.05,1);
+	min-width: 100%;
+    min-height: 100%;
+	transition-duration: .5s;
+	transition-delay: 0.2s;	
+}
+
+.article-text{
+	background-color: #D9D9D9;
+	border-radius:0 0 15px 15px;
+	height: 120px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.article-tag{
+	font-size: 0.8em;
+	padding: 0 5px;
+	font-weight: 900;
+	color:#8f060b;
+	min-height: 0.8em;
+}
+
+.article-title{
+	font-weight: bold;
+	font-size: 1.1em;
+	padding:0 5px;
+}
+
+.article:hover .article-title{
+	color: #c9141a;
+	text-decoration: underline;
+}
+
+.article-body{
+	padding:0 5px;
+	font-size: 0.8em;
+	max-height: 3.2em;
+	overflow: hidden;
+}
+
+.article-date{
+	padding: 0 5px;
+	font-size: 0.8em;
+	color:#5a5a5a;
+}

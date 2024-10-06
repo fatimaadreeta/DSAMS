@@ -1,0 +1,60 @@
+@import "../index.css";
+
+#cover-img{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+}
+
+#logo-img{
+    top: 170px;
+    left: 20px;
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px 200px;
+    z-index: 10;
+}
+
+#logo-img-raised{
+    top: 20px;
+    left: 20px;
+    position: relative;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px 200px;
+    z-index: 10;
+}
+.logo img{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	object-fit: cover;
+}
+.clubName{
+    padding:20px;
+}
+
+.joinBtn{
+    margin: auto;
+    padding: 10px 30px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    #logo-img{
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+}
+
+.descBox{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+}
